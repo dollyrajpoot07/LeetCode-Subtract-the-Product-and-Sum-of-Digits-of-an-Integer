@@ -15,13 +15,13 @@ class Solution {
 
         while (n > 0) {
             int remainder = n % 10;
-            // System.out.println(remainder);
+            System.out.println(remainder);
             product *= remainder;
             sum += remainder;
             n = n / 10;
         }
-        // System.out.println("ResultProd: " + product);
-        // System.out.println("ResultSum: " + sum);
+        System.out.println("ResultProd: " + product);
+        System.out.println("ResultSum: " + sum);
         return product - sum;
     }
 }
